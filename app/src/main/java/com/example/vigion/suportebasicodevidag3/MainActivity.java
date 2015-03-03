@@ -1,13 +1,17 @@
 package com.example.vigion.suportebasicodevidag3;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.preference.DialogPreference;
+import android.preference.Preference;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.app.AlertDialog;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -35,6 +39,15 @@ public class MainActivity extends ActionBarActivity {
         }
 
         });
+
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("AVISO");
+        alertDialog.setMessage("Todo o conteúdo apresentado é apenas para uso informal. Em caso de emergencia contactar o número de emergência 112");
+        alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+        public void onClick(DialogInterface dialog, int which) {
+        }
+        });
+        alertDialog.show();
     }
 
 
@@ -63,12 +76,18 @@ public class MainActivity extends ActionBarActivity {
     //Abre o layout do Engasgamento
     public void buttonOnClickPrincipios(View v) {
         Button button=(Button) v;
-        startActivity(new Intent(getApplicationContext(), activity_engasgamento.class));
+        startActivity(new Intent(getApplicationContext(), Engasgamento.class));
     }
 
     //Abre o layout do SBV
-    public void buttonOnClickPrincipiosDois(View v) {
+    public void buttonOnClickPrincipiosTres(View v) {
         Button button=(Button) v;
-        startActivity(new Intent(getApplicationContext(), activity_sbv.class));
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+    }
+
+    //Abre o layout do SBV
+    public void buttonOnClickSBV(View v) {
+        Button button=(Button) v;
+        startActivity(new Intent(getApplicationContext(), sbv1.class));
     }
 }

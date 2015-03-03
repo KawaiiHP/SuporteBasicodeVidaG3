@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_engasgamento">Engasgamento</string>
     <string name="title_activity_sbv">SBV</string>
+    <string name="title_activity_sbv1">sbv1</string>
 
 </resources>

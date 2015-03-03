@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:background="@drawable/fundo">
+    android:background="@drawable/fundocoracao">
 
     <Button
         android:layout_width="wrap_content"
@@ -24,36 +24,38 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Engasgamento"
+        android:text="&lt;"
         android:id="@+id/buttonEngasgamento"
-        android:layout_marginTop="71dp"
-        android:layout_below="@+id/button112"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:onClick="buttonOnClickPrincipios"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="buttonOnClickPrincipios" />
+        android:backgroundTint="#ff333333"
+        android:background="#ff2b2b2b"
+        android:textColor="#ffffffff" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Suporte Básivo de Vida"
+        android:text=">"
         android:id="@+id/buttonSBV"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:onClick="buttonOnClickPrincipiosDois"
+        android:layout_alignTop="@+id/buttonEngasgamento"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="buttonOnClickPrincipiosDois" />
+        android:backgroundTint="#ff333333"
+        android:background="#ff2b2b2b"
+        android:textColor="#ffffffff" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Versão Alpha - Os aspetos visuais e funcionais desta aplicação são apenas um teste, nada será igual a isto na versão final"
-        android:id="@+id/textView"
+        android:text="Descrição"
+        android:id="@+id/button"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#ff333333"
+        android:background="#ff2b2b2b"
+        android:textColor="#ffffffff" />
 
 </RelativeLayout>

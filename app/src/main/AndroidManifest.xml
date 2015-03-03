@@ -35,8 +35,8 @@
             android:label="@string/title_activity_engasgamento" >
         </activity>
         <activity
-            android:name=".SBV"
-            android:label="@string/title_activity_sbv" >
+            android:name=".sbv1"
+            android:label="@string/title_activity_sbv1" >
         </activity>
     </application>
 

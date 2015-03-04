@@ -3,8 +3,6 @@ package com.example.vigion.suportebasicodevidag3;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
-import android.preference.DialogPreference;
-import android.preference.Preference;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -74,20 +72,20 @@ public class MainActivity extends ActionBarActivity {
     }
 
     //Abre o layout do Engasgamento
-    public void buttonOnClickPrincipios(View v) {
+    public void buttonOnClickEngasgamento(View v) {
         Button button=(Button) v;
         startActivity(new Intent(getApplicationContext(), Engasgamento.class));
     }
 
     //Abre o layout do SBV
-    public void buttonOnClickPrincipiosTres(View v) {
-        Button button=(Button) v;
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
-    }
-
-    //Abre o layout do SBV
     public void buttonOnClickSBV(View v) {
         Button button=(Button) v;
-        startActivity(new Intent(getApplicationContext(), sbv1.class));
+        startActivity(new Intent(getApplicationContext(), SBV1.class));
+    }
+
+    //Abre o layout Acerca
+    public void buttonOnClickAcerca(View v) {
+        Button button=(Button) v;
+        startActivity(new Intent(getApplicationContext(), Acerca.class));
     }
 }

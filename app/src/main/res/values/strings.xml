@@ -7,5 +7,14 @@
     <string name="title_activity_engasgamento">Engasgamento</string>
     <string name="title_activity_sbv">SBV</string>
     <string name="title_activity_sbv1">sbv1</string>
+    <string name="title_activity_sbv2">sbv2</string>
+    <string name="title_activity_engasgamento2">engasgamento2</string>
+    <string name="title_activity_sbv3">sbv3</string>
+    <string name="title_activity_sb4">sb4</string>
+    <string name="title_activity_sbv5">sbv5</string>
+    <string name="title_activity_sbv6">sbv6</string>
+    <string name="title_activity_sbv7">sbv7</string>
+    <string name="title_activity_sbv8">sbv8</string>
+    <string name="title_activity_acerca">acerca</string>
 
 </resources>

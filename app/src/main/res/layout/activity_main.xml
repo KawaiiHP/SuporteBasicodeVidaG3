@@ -24,38 +24,43 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="&lt;"
+        android:text="Engasgamento"
         android:id="@+id/buttonEngasgamento"
-        android:onClick="buttonOnClickPrincipios"
+        android:onClick="buttonOnClickEngasgamento"
+        android:backgroundTint="#ff333333"
+        android:background="#ff2b2b2b"
+        android:textColor="#ffffffff"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:backgroundTint="#ff333333"
-        android:background="#ff2b2b2b"
-        android:textColor="#ffffffff" />
+        android:layout_alignRight="@+id/buttonSBV"
+        android:layout_alignEnd="@+id/buttonSBV" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=">"
+        android:text="Suporte Básico de Vida"
         android:id="@+id/buttonSBV"
-        android:onClick="buttonOnClickPrincipiosDois"
-        android:layout_alignTop="@+id/buttonEngasgamento"
+        android:onClick="buttonOnClickSBV"
+        android:backgroundTint="#ff333333"
+        android:background="#ff2b2b2b"
+        android:textColor="#ffffffff"
+        android:layout_above="@+id/buttonEngasgamento"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:backgroundTint="#ff333333"
-        android:background="#ff2b2b2b"
-        android:textColor="#ffffffff" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Descrição"
+        android:text="Acerca"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:backgroundTint="#ff333333"
         android:background="#ff2b2b2b"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffffffff"
+        android:onClick="buttonOnClickAcerca" />
 
 </RelativeLayout>

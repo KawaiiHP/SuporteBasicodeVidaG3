@@ -1,6 +1,7 @@
 package com.example.vigion.suportebasicodevidag3;
 
 import android.content.Intent;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,19 +10,19 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class Engasgamento extends ActionBarActivity {
+public class SBV1 extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_engasgamento);
+        setContentView(R.layout.activity_sbv1);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_engasgamento, menu);
+        getMenuInflater().inflate(R.menu.menu_sbv1, menu);
         return true;
     }
 
@@ -40,9 +41,15 @@ public class Engasgamento extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    //Abre o layout Acerca
-    public void buttonOnClickEngasgamento2(View v) {
-        Button button=(Button) v;
-            startActivity(new Intent(getApplicationContext(), Engasgamento2.class));
+    //Abre o layout do SBV2
+    public void buttonOnClickSBV2(View v) {
+        Button button =(Button) v;
+        startActivity(new Intent(getApplicationContext(), SBV2.class));
+    }
+
+    //Abre o layout do SBV3
+    public void buttonOnClickSBV3(View v) {
+        Button button =(Button) v;
+        startActivity(new Intent(getApplicationContext(), SBV3.class));
     }
 }
